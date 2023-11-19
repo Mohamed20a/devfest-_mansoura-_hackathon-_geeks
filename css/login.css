@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: rgb(215, 219, 217); */
+}
+
+/*start Globle rules */
+/* .container{
+    width: 1200px;
+    text-align: center;
+    font-family: sans-serif;
+
+} */
+
+
+/* .clearfix {clear: both;} */
+
+/* end main rules */
+
+/*start regist*/
+.regist
+{
+    color: green;
+    text-align: center;
+    padding: 6em;
+}
+ .regist h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 50px;
+    margin: 50px;
+ }
+.register{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.register input{
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    border: 0px;
+    border-bottom: 1px solid gray ;
+}
+
+.register input:focus{
+    outline: none;
+}
+.register select{
+    border: 0px;
+    border-bottom: 1px solid gray ;
+    width: 600px;
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: green;
+}
+.register button{
+
+    margin: 30px;
+    margin-left: 170px;
+    padding: 20px;
+    width: 400px;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 50px;
+}
+
+.register p{
+    font-size: 17px;
+    margin-left: 100px;
+    padding-left: 100px;
+    font-weight: 500;
+}
+
+
+/*end regist*/

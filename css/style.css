@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    /* background-image: linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(../photo/back.jpg); */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+    /* height: 47.1em; */
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    /* backdrop-filter: blur(5px); */
+    box-shadow: 0px 0px 2px 2px #32323212;
+    padding: 1.3em !important;
+}
+
+.navbar .nav-logo img{
+    width: 6.4em;
+}
+
+.navbar h3 a {
+    color: #2f1db7;
+    font-size: calc(0.5vw + 20px);
+}
+.navbar h3 a:hover{
+    text-decoration: none;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: baseline;
+    /* align-items: center; */
+    gap: 1.5em;
+}
+
+.navbar nav p{
+    font-weight: 600;
+}
+
+.navbar nav .out {
+    color: #198754;
+    font-size: 22px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Title */
+.about{
+    padding: 10em 0 8em;
+    background: #e8e8e8;
+}
+#row{
+    display: flex;
+    margin: 6em 0;
+}
+#row .about-name{
+    color: #198754;
+}
+
+#row .img{
+    width: 24em;
+}
+
+#row .about-title{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+h5{ 
+    color: #fff;
+}
+.hero-section {
+    width: 100%;
+    padding-top: 10em;
+}
+
+.hero-section .hero-title {
+    padding: 12px;
+    width: calc(100% - 120px);
+    margin: 5em auto;
+}
+
+.hero-section .hero-title h1 {
+    color: green;
+    font-size: calc(1vw + 24px);
+}
+
+.hero-section .hero-title p {
+    color: rgb(5, 164, 5);
+    font-size: calc(0.5vw + 16px);
+    opacity: 0.9;
+    margin: 4px 0 16px 0;
+}
+
+.hero-section .hero-title p span{
+    font-size: 1.6em;
+    color: #095bb3;
+    font-family: 'rabat';
+}
+
+.hero-section .hero-title .btns-container {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-section .hero-title .btns-container a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 22px;
+    font-size: calc(0.35vw + 14px);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.hero-section .hero-title .btns-container a.subscribe-btn {
+    background-color: #007ACC;
+    color: #ffffff;
+    border: 2px solid #fff;
+}
+.hero-section .hero-title .btns-container a.subscribe-btn:hover {
+    background-color: #fff;
+    color: #007ACC;
+    border: 2px solid #007ACC;
+    transition: 600ms all;
+}
+
+.hero-section .hero-title .btns-container a.contact-btn {
+    background-color: #FEFEFE00;
+    color: #FEFEFE;
+    border: 2px solid #FEFEFE;
+}
+
+.hero-section .hero-title .btns-container a.contact-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 43px;
+    height: 14px;
+    /* border-radius: inherit; */
+    scale: 0;
+    z-index: -1;
+  }
+  
+  .hero-section .hero-title .btns-container a.contact-btn:hover::before {
+    scale: 3;
+  }
+  
+  .hero-section .hero-title .btns-container a.contact-btn:hover {
+    color: #fff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    background-color: #007ACC;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .hero-section .hero-title .btns-container a.contact-btn:active {
+    scale: 1;
+  }
+
+
+.box{
+    margin: 6em auto;        
+}
+.box .card{
+    margin: 1em auto;
+    background: #f8f9fa;
+    transition: all 0.5s; 
+    width: 95%;
+}
+.card:hover {
+    border: 1px solid green;
+    transform: scale(1.05);
+}
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+.box h3 {
+    color: green;
+    text-align: center;
+}
+.box #quran{
+    font-family: 'thuluth-decorated';
+}
+.box #islam{
+    font-family: 'hala';
+}
+
+
+
+
+.nav-item{
+    font-size: 27px;
+    padding: 0px 3px;
+}
+
+
+
+.page{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title{
+    text-align: center;
+    padding: 10em 0 0;
+}
+.title h1{
+    color: #198754;
+}
+.title p{
+    color: #949494;
+}
+.page .card-user{
+    padding: 9em;
+    margin: 4em 0;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.page #food{
+    background-image: linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(https://img.freepik.com/free-photo/quinoa-mushrooms-lettuce-red-cabbage-spinach-cucumbers-tomatoes-bowl-buddha-dark-top-view_127032-1963.jpg?w=1380&t=st=1700380680~exp=1700381280~hmac=8a9cf22583082af9957dc29013b7f7ceec47abd83047746eccb489d39caae0bb);
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+.page #material{
+    background-image: linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(https://img.freepik.com/free-photo/recycle-composition_23-2147825523.jpg?w=1060&t=st=1700381230~exp=1700381830~hmac=7920a881cfcc500f7dee71bf5362150e30f39bcd897773a4497e7be3f5a745ad);
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+.page button{
+    background-color: #198754;
+    color: #fff;
+    border: 1px solid green;
+    padding: 6px 50px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.submit{
+    margin-bottom: 3em;
+    text-align: center;
+}
+.submit button{
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #198754;
+    border-radius: 10px;
+    border: 1px solid #198754;
+    transition: .3s all ease-in-out;
+}
+.submit button:hover{
+    background-color: #fff;
+    color: #198754;
+    border: 1px solid #198754;
+}
+.page .card-section{
+    padding: 9em;
+    margin: 11em 0;
+    border: 2px solid green;
+}
+.page .card-factor{
+    width: 75%;
+    padding: 30px;
+    margin: 8em 0;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Table Factor */
+.page .table {
+    width: 75%;
+    margin-bottom: 1rem;
+    color: #212529;
+    margin-top: 6em;
+}
+table{
+    margin: 3em 0;
+    border-radius: 10px;
+}
+.row .cell:nth-child(1) {
+    width: 170px;
+    padding-left: 40px;
+}
+.row .cell:nth-child(2) {
+    width: 150px;
+}
+.row .cell:nth-child(3) {
+    width: 160px;
+}
+.row .cell:nth-child(4) {
+    width: 120px;
+}
+.row .cell:nth-child(5) {
+    width: 120px;
+}
+.row .cell:nth-child(6) {
+    width: 60px;
+}
+.row #col-guest{
+    width: 300px !important;
+}
+#header-admin{
+    color: #fff;
+    background: #198754;
+    width: 104% !important;
+}
+#header-guest{
+    color: #fff;
+    background: #198754;
+    width: 107% !important;
+}
+.row.header .cell {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset!important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+#row-col{
+    padding: 1.5em 0;
+    border: 2px solid green;
+}
+
+#row-col #btn a{
+    color: #fff;
+    background: rgb(106, 220, 106);
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+}
+#row-col #btn a:hover{
+    background: rgb(154, 155, 154);
+}
+
+
+
+
+.box{
+    margin: 6em auto;   
+}
+.box .card{
+    margin: 1em auto;
+    background: #f8f9fa;
+    transition: all 0.5s; 
+    width: 95%;
+}
+.card:hover {
+    border: 1px solid green;
+    transform: scale(1.05);
+}
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+.box h2 {
+    line-height: 1.5;
+    color: green;
+
+    
+}
+.box p{
+    color: #666565;
+    display: block;
+}
+
+.box #quran{
+    font-family: 'thuluth-decorated';
+}
+.box #islam{
+    font-family: 'hala';
+}
+
+.box-1{
+    text-align: center;
+    margin: 10em;
+}
+
+.box-1 h2{
+    line-height: 1.5;
+    color: green;
+
+}
+
+.box-1 p{
+    color: #666565;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em;
+}
+
+.box-1 b{
+    color: #009522;
+}
+
+
+@media (max-width: 425px) { 
+    .navbar {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-title {
+        width: 100%;
+    }
+}
